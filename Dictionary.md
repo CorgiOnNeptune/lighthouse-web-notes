@@ -1,28 +1,89 @@
 # Dictionary of Development Vocab
 
 ## Table of Contents
- * [Callback Functions](#Callback_Functions)
- * [Primitive Data Types](#Primitive_Data_Types)
- * [Single Responsibility Principle](#Single_Responsibility_Principle)
- * [](#)
- * [](#)
- * [](#)
- * [](#)
+* [Callback Functions](#callback)
+* [Closures](#Closures)
+* [Primitive Data Types](#primitive)
+* [Recursive](#Recursive)
+* [Single Responsibility Principle](#srp)
+* [Stack Overflow](#stack)
+* [](#)
+* [](#)
+* [](#)
 
 
 &nbsp;
-## Callback_Functions
-A function that we pass (as an argument) to anothe rfunction, to be invoked/called by that function.
+## <a id="callback"></a>Callback Functions
+A function that we pass (as an argument) to another function, to be invoked/called by that function.
+
+```js
+// The second argument/parameter is a (callback) function!
+const findWaldo = (names, callback) => {
+  // With .forEach()
+  names.forEach((name, index) => {
+    if (name === 'Waldo') {
+      callback(name, index);
+    }
+  });
+};
+const actionWhenFound = (name, index) => console.log(`Found ${name} at index ${index}!`);
+
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+```
+
+### **Higher Order Function (HOF)**
+A function that accepts another function as an argument.
+
+i.e. `findWaldo()` is the HOF above.
 
 &nbsp;
-## Higher Order Function (HOF)
-A function that accepts another function as an argument
+OR a function that returns a function.
 
 &nbsp;
-OR a function that returns a function
+## Closures
+Javascript retains context of parent functions, meaning that it will retain references to any variable inside parent functions. (aka [`Lexical Scoping`](#lexical)).
+
+When a function retains the context of a parent function, we call it a `'closure'`.
+
+```js
+const useNumber = () => { // Outer (parent) Function
+  let number = 5;
+
+  const showNumber = () => { // Inner function
+    console.log('Number is:', number);
+    number++;
+  };
+
+  return showNumber;
+};
+
+const show = useNumber();
+
+console.log(show); // ==> [Function: showNumber]
+show(); // ==> 'Number is:' 5
+show(); // ==> 'Number is:' 6
+show(); // ==> 'Number is:' 7
+show(); // ==> 'Number is:' 8
+```
 
 &nbsp;
-## Primitive_Data_Types
+## <a id="false"></a>Falsy Values
+The following values are always considered `false` in a `Boolean` context.
+  * `false`
+  * `undefined`
+  * `null`
+  * `0`
+  * `''`
+  * `NaN`
+
+Every other value in Javascript is considered `true` or `truthy`.
+
+&nbsp;
+## <a id="lexical"></a>Lexical Scoping
+Every inner level of scope, can access its outer levels of scope.
+
+&nbsp;
+## <a id="primitive"></a>Primitive Data Types
 Primitive Data Types refer to any value in JavaScript that is not an object.
   * undefined
   * null
@@ -32,5 +93,40 @@ Primitive Data Types refer to any value in JavaScript that is not an object.
   * symbol
 
 &nbsp;
-## Single_Responsibility_Principle
-Ideally your functions/code should do only one thing
+## Recursive
+An alternative to using traditional loops wherein a function is able to call itself. 
+
+It **must** stop calling itself at some point, otherwise it is just an infinite loop.
+```js
+function countEvenToTwelve(number) {
+  if (number <= 12) {
+    console.log(number);
+    countEvenToTwelve(number+2);
+  }
+}
+countEvenToTwelve(0);
+// Will output 0, 2, 4, 6, 8, 10, 12 (on new lines, once per **recursion**)
+```
+
+### **Recursive Case**
+A condition in which a function will be able to continue calling itself while `true`.
+
+&nbsp;
+i.e. `number <= 12`
+
+### **Base Case**
+A condition in which the function will no longer be able to call itself if `true`.
+
+&nbsp;
+i.e. `number > 12`
+
+&nbsp;
+## <a id="srp"></a>Single Responsibility Principle
+Ideally your functions/code should do only one thing. 
+
+&nbsp;
+i.e. use helper functions to limit duplicate, redundant code or overly complex functions.
+
+&nbsp;
+## <a id="stack"></a>Stack Overflow
+An overflow error that happens when a program tries to use more memory space in the call stack than has been allocated to that stack.
