@@ -1,19 +1,22 @@
 # Dictionary of Development Vocab
 
 ## Table of Contents
-* [Callback Functions](#callback)
-* [Closures](#Closures)
-* [Primitive Data Types](#primitive)
-* [Recursive](#Recursive)
-* [Single Responsibility Principle](#srp)
-* [Stack Overflow](#stack)
-* [](#)
-* [](#)
-* [](#)
+* [Callback Functions](#callback-functions)
+* [Closures](#closures)
+* [Falsy Values](#falsy-values)
+* [Lexical Scoping](#lexical-scoping)
+* [Primitive Data Types](#primitive-data-types)
+* [Recursive](#recursive)
+  * [Recursive Case](#recursive-case)
+  * [Base Case](#base-case)
+* [Single Responsibility Principle](#single-responsibility-principle)
+* [Stack Overflow](#stack-overflow)
+* []()
+* []()
 
 
 &nbsp;
-## <a id="callback"></a>Callback Functions
+## Callback Functions
 A function that we pass (as an argument) to another function, to be invoked/called by that function.
 
 ```js
@@ -41,7 +44,7 @@ OR a function that returns a function.
 
 &nbsp;
 ## Closures
-Javascript retains context of parent functions, meaning that it will retain references to any variable inside parent functions. (aka [`Lexical Scoping`](#lexical)).
+Javascript retains context of parent functions, meaning that it will retain references to any variable inside parent functions. (aka [`Lexical Scoping`](#lexical-scoping)).
 
 When a function retains the context of a parent function, we call it a `'closure'`.
 
@@ -67,7 +70,7 @@ show(); // ==> 'Number is:' 8
 ```
 
 &nbsp;
-## <a id="false"></a>Falsy Values
+## Falsy Values
 The following values are always considered `false` in a `Boolean` context.
   * `false`
   * `undefined`
@@ -79,11 +82,11 @@ The following values are always considered `false` in a `Boolean` context.
 Every other value in Javascript is considered `true` or `truthy`.
 
 &nbsp;
-## <a id="lexical"></a>Lexical Scoping
+## Lexical Scoping
 Every inner level of scope, can access its outer levels of scope.
 
 &nbsp;
-## <a id="primitive"></a>Primitive Data Types
+## Primitive Data Types
 Primitive Data Types refer to any value in JavaScript that is not an object.
   * undefined
   * null
