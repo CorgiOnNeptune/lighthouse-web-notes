@@ -99,14 +99,16 @@ Primitive Data Types refer to any value in JavaScript that is not an object.
 ## Recursive
 An alternative to using traditional loops wherein a function is able to call itself. 
 
-It **must** stop calling itself at some point, otherwise it is just an infinite loop.
+A function must have at `>= 1` [recursive case](#recursive-case) `&& >= 1` [base case](#base-case) to be recursive.
 ```js
-function countEvenToTwelve(number) {
-  if (number <= 12) {
+const countEvenToTwelve = () => {
+  if (number <= 12) { // Recursive Case
     console.log(number);
+    // The function will call itself again and get closer to the base case
     countEvenToTwelve(number+2);
   }
-}
+  // Base case, do nothing when number > 12
+};
 countEvenToTwelve(0);
 // Will output 0, 2, 4, 6, 8, 10, 12 (on new lines, once per **recursion**)
 ```
