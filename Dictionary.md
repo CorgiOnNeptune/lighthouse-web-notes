@@ -11,7 +11,10 @@
   * [Base Case](#base-case)
 * [Single Responsibility Principle](#single-responsibility-principle)
 * [Stack Overflow](#stack-overflow)
-* []()
+* [Testing](#testing)
+  * [Functional Testing](#functional-testing)
+  * [Integration Testing](#integration-testing)
+  * [Unit Testing](#unit-testing)
 * []()
 
 
@@ -126,12 +129,25 @@ A condition in which the function will no longer be able to call itself if `true
 i.e. `number > 12`
 
 &nbsp;
-## <a id="srp"></a>Single Responsibility Principle
+## Single Responsibility Principle
 Ideally your functions/code should do only one thing. 
 
 &nbsp;
 i.e. use helper functions to limit duplicate, redundant code or overly complex functions.
 
 &nbsp;
-## <a id="stack"></a>Stack Overflow
+## Stack Overflow
 An overflow error that happens when a program tries to use more memory space in the call stack than has been allocated to that stack.
+
+&nbsp;
+## Testing
+<a href='https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/'>...Read more</a>
+
+### **Unit Testing**
+The practice of testing small pieces of code, typically individual functions, alone and isolated. If your test is using external resources, such as a network or database, it is not a unit test.
+
+### **Integration Testing**
+Testing how system parts work together. i.e. An integration test may work alongside a real database to give back test results.
+
+### **Functional Testing**
+The testing of complete functionality of an applciation. In regards to web apps, this means using some tool to automate a browser, which is then used to click around on pages to test the application.
