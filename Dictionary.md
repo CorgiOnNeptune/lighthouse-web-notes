@@ -5,6 +5,7 @@
 * [Closures](#closures)
 * [Falsy Values](#falsy-values)
 * [Lexical Scoping](#lexical-scoping)
+* [Node: Readline](#node-readline)
 * [Primitive Data Types](#primitive-data-types)
 * [Recursive](#recursive)
   * [Recursive Case](#recursive-case)
@@ -15,7 +16,6 @@
   * [Functional Testing](#functional-testing)
   * [Integration Testing](#integration-testing)
   * [Unit Testing](#unit-testing)
-* []()
 
 
 &nbsp;
@@ -89,6 +89,17 @@ Every other value in Javascript is considered `true` or `truthy`.
 Every inner level of scope, can access its outer levels of scope.
 
 &nbsp;
+## Node: Readline
+
+The `node:readline` module provides an interface for reading data from a Readable stream (such as <a href='https://github.com/nodejs/node/blob/main/doc/api/process.md#processstdin'>`process.stdin`</a>) one line at a time.
+
+<a href='https://github.com/nodejs/node/blob/main/doc/api/readlinemd'>node:readline Documentation</a>
+
+<a href='https://github.com/nodejs/node/blob/main/doc/api/readlinemd#rlquestionquery-options-callback'>rl.question()</a>
+
+<a href='https://github.com/nodejs/node/blob/main/doc/api/readlinemd#rlclose'>rl.close()</a>
+
+&nbsp;
 ## Primitive Data Types
 Primitive Data Types refer to any value in JavaScript that is not an object.
   * undefined
@@ -151,3 +162,4 @@ Testing how system parts work together. i.e. An integration test may work alongs
 
 ### **Functional Testing**
 The testing of complete functionality of an applciation. In regards to web apps, this means using some tool to automate a browser, which is then used to click around on pages to test the application.
+
