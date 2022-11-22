@@ -1,3 +1,5 @@
+<link href="./assets/css/style.css" rel="stylesheet"></link>
+
 # Dictionary of Development Vocab
 
 ## Table of Contents <a name="top"></a><a class="top-link hide" href="#top">↑</a>
