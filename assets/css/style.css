@@ -1,0 +1,70 @@
+
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+a { color: #4183c4; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+ul { list-style: none; margin: 25px 0; padding: 0; }
+li { display: table-cell; font-weight: bold; width: 1%; }
+.logo { display: inline-block; margin-top: 35px; }
+.logo-img-2x { display: none; }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .logo-img-1x { display: none; }
+  .logo-img-2x { display: inline-block; }
+}
+#suggestions {
+  margin-top: 35px;
+  color: #ccc;
+}
+#suggestions a {
+  color: #666666;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.top-link {
+    transition:     all .25s ease-in-out;
+    position:       fixed;
+    bottom:         0;
+    right:          0;
+    display:        inline-flex;
+    color:          #000000;
+
+    cursor:         pointer;
+    align-items:    center;
+    justify-content:center;
+    margin:         0 2em 2em 0;
+    border-radius:  50%;
+    padding:        .25em;
+    width:          1em;
+    height:         1em;
+    background-color: #F8F8F8;
+}
+
+/* remove the repo name as some kind of weird super-title */
+h1:first-child { display: none }
+
+/* and better emphasise the _real_ title */
+h1:nth-child(2) { font-size: 3em; }
+
+/* let's also give images a subtle border */
+img { border: 1px solid #DDD; }
