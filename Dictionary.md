@@ -1,6 +1,6 @@
 # Dictionary of Development Vocab
 
-## Table of Contents
+## Table of Contents <a name="top"></a><a class="top-link hide" href="#top">↑</a>
 * [Callback Functions](#callback-functions)
 * [Closures](#closures)
 * [Falsy Values](#falsy-values)
@@ -163,3 +163,36 @@ Testing how system parts work together. i.e. An integration test may work alongs
 ### **Functional Testing**
 The testing of complete functionality of an applciation. In regards to web apps, this means using some tool to automate a browser, which is then used to click around on pages to test the application.
 
+
+
+
+
+
+
+
+<style>
+  @media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.top-link {
+    transition:     all .25s ease-in-out;
+    position:       fixed;
+    bottom:         0;
+    right:          0;
+    display:        inline-flex;
+    color:          #000000;
+
+    cursor:         pointer;
+    align-items:    center;
+    justify-content:center;
+    margin:         0 2em 2em 0;
+    border-radius:  50%;
+    padding:        .25em;
+    width:          1em;
+    height:         1em;
+    background-color: #F8F8F8;
+}
+</style>
