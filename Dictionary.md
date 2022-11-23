@@ -5,12 +5,12 @@
 * [Closures](#closures)
 * [Falsy Values](#falsy-values)
 * [Lexical Scoping](#lexical-scoping)
-* [Mocha & Chai](/Week_2/mocha_and_chai.md)
-* [**Networking**](/Week_2/networking.md)
+* [**Mocha & Chai**](/Week_2/mocha_and_chai.md#mocha--chai)
+* [**Networking**](/Week_2/networking.md#networking)
   * [HTTP](/Week_2/networking.md#http)
   * [TCP](/Week_2/networking.md#tcp---transition-control-protocol)
   * [URL](/Week_2/networking.md#url-uniform-resource-locator)
-* [Node: Readline](#node-readline)
+* [**Node: Readline**](/Week_2/node_readline.md#node-readline)
 * [Primitive Data Types](#primitive-data-types)
 * [Recursive](#recursive)
   * [Recursive Case](#recursive-case)
@@ -97,18 +97,6 @@ Every other value in `Javascript` is considered `true` or `truthy`.
 &nbsp;
 ## Lexical Scoping
 Every inner level of scope, can access its outer levels of scope.
-
-
-&nbsp;
-## Node: Readline
-
-The `node:readline` module provides an interface for reading data from a Readable stream (such as <a href='https://github.com/nodejs/node/blob/main/doc/api/process.md#processstdin'>`process.stdin`</a>) one line at a time.
-
-<a href='https://github.com/nodejs/node/blob/main/doc/api/readline.md'>node:readline Documentation</a>
-
-<a href='https://github.com/nodejs/node/blob/main/doc/api/readline.md#rlquestionquery-options-callback'>rl.question()</a>
-
-<a href='https://github.com/nodejs/node/blob/main/doc/api/readline.md#rlclose'>rl.close()</a>
 
 
 &nbsp;
