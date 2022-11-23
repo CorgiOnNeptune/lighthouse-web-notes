@@ -7,7 +7,7 @@ Mocha is a testing framework, while Chai is an assertion library.
 &nbsp;
 # Installation
 ```js
-npm install mocha@9.2.2 chai --save-dev
+npm i mocha@9.2.2 chai --save-dev
 ```
 
 In package.json
@@ -17,7 +17,7 @@ In package.json
 }
 ```
 ```
-npm test test/test.js
+npm test OR npm test test/test.js
 ```
 
 ## Basic Test Setup
