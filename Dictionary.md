@@ -16,6 +16,7 @@
   * [Functional Testing](#functional-testing)
   * [Integration Testing](#integration-testing)
   * [Unit Testing](#unit-testing)
+* [TCP]()
 
 
 &nbsp;
@@ -149,6 +150,19 @@ i.e. use helper functions to limit duplicate, redundant code or overly complex f
 &nbsp;
 ## Stack Overflow
 An overflow error that happens when a program tries to use more memory space in the call stack than has been allocated to that stack.
+
+&nbsp;
+## TCP - *Transition Control Protocol*
+TCP is a specific type of protocol (aka guideline, standard, agreement) which is commonly used to structure the data and workflow of data over the network. 
+TCP based communication alows two machines to establish an open channel for two-way data communication. 
+
+&nbsp;
+<img style='box-shadow: 2px 4px 10px #AAA' src="https://d.pr/i/lH328b+"/>
+
+Just like with a phone call, there is always one side which dials a specific number to establish a connection to the other side. In computer networking, this number is as an IP Address. A computer can have many network-based applications running, much like how a company can have many different offices. For this reason, someone decided to effectively allow for specific phone number extensions. These are referred to as ports in computer networking.
+
+&nbsp;
+<img style='box-shadow: 2px 4px 10px #AAA' src="https://d.pr/i/xDRacM+"/>
 
 &nbsp;
 ## Testing
