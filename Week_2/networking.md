@@ -1,11 +1,20 @@
 # Networking
 ### Lil' Table of Contents
+* [API](/Week_2/networking.md#api)
 * [HTTP](/Week_2/networking.md#http)
 * [TCP](/Week_2/networking.md#tcp---transition-control-protocol)
 * [URL](/Week_2/networking.md#url-uniform-resource-locator)
 
 &nbsp;
 ***
+
+&nbsp;
+## API
+APIs are a set of requirements that govern how one application can talk to another. They achieve this by 'exposing' some of a program's internal functions to the outside world, in a limited fashion. The limit outside access to a specific set of features, often ones that handle some sort of data request. 
+
+APIs clearly define exactly how a program will interact with the rest of the software world. Saving time and resources.
+
+<a href='https://readwrite.com/api-defined/'>...Read More</a>
 
 &nbsp;
 ## HTTP
