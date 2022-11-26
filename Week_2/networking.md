@@ -1,6 +1,7 @@
 # Networking
 ### Lil' Table of Contents
 * [API](/Week_2/networking.md#api)
+* [DNS](/Week_2//networking.md#dns-domain-name-system)
 * [HTTP](/Week_2/networking.md#http)
 * [TCP](/Week_2/networking.md#tcp---transition-control-protocol)
 * [URL](/Week_2/networking.md#url-uniform-resource-locator)
@@ -15,6 +16,27 @@ APIs are a set of requirements that govern how one application can talk to anoth
 APIs clearly define exactly how a program will interact with the rest of the software world. Saving time and resources.
 
 <a href='https://readwrite.com/api-defined/'>...Read More</a>
+
+&nbsp;
+## DNS (Domain Name System)
+The DNS is a database responsible for turning domain names into IP addresses. Since every device and page has its own IP address, DNS makes it possible to input words, in the form of domain names/URLs into the browser, without having to know every websites IP address.
+
+&nbsp;
+### **-- DNS Steps --**
+ 1. **DNS Recursor:** The DNS recursor/resolver, receives the query from the DNS client. Then it communicates with other DNS servers to find the right IP address. After the resolver retrieves the request from the client, the resolver acts like a client itself. As it does this, it makes queries that get sent to the next three DNS servers:.
+ 2. **Root Nameservers:** The root nameserver is designated for the internet's DNS root zone. Its job is to answer requests sent to it for records in the root zone. It answers requests by sending back a list of the authoritative nameservers that go with the correct TLD.
+ 3. **TLD Nameservers:** A TLD nameserver keeps the IP address of the second-level domain contained within the TLD name. It then releases the website’s IP address and sends the query to the domain’s nameserver.
+ 4. **Authoritative Nameservers:** An authoritative nameserver is what resolves and gives you the answer to your DNS query. There are two types of authoritative nameservers: a master/primary nameserver and secondary nameserver. The master server keeps the original copies of the zone records. The secondary server shares the DNS server load and acts as a backup if the master server fails.
+
+&nbsp;
+### **-- DNS Records Types --**
+This is just a small subset of the available record types, but these are the most common.
+ * `A`: most common; map a hostname to IP address (IPv4, 32-bit)
+ * `NS`: *Name Server* - responsible for a DNS Zone
+ * `MX`: *Mail Exchange* - record specifies where email gets sent
+ * `CNAME`: *Canonical Name* - alias for another hostname
+ * `AAAA`: similar to `A`, but uses IPv6, 128-bit
+
 
 &nbsp;
 ## HTTP

@@ -8,6 +8,7 @@
 * [**Mocha & Chai**](/Week_2/mocha_and_chai.md#mocha--chai)
 * [**Networking**](/Week_2/networking.md#networking)
   * [API](/Week_2/networking.md#api)
+  * [DNS](/Week_2//networking.md#dns-domain-name-system)
   * [HTTP](/Week_2/networking.md#http)
   * [TCP](/Week_2/networking.md#tcp---transition-control-protocol)
   * [URL](/Week_2/networking.md#url-uniform-resource-locator)
