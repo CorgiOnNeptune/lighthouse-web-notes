@@ -13,6 +13,7 @@
   * [URL](/Week_2/networking.md#url-uniform-resource-locator)
 * [**Node: Readline**](/Week_2/node_readline.md#node-readline)
 * [Primitive Data Types](#primitive-data-types)
+* [Promise](#promises)
 * [Recursive](#recursive)
   * [Recursive Case](#recursive-case)
   * [Base Case](#base-case)
@@ -109,6 +110,31 @@ Primitive Data Types refer to any value in JavaScript that is not an object.
   * string
   * number
   * symbol
+
+
+&nbsp;
+## Promises
+Stages in creating a `Promise`:
+ 1. **Wrapping** (syntax / promise structure)
+ 2. **Thening** (when it works)
+ 3. **Catching** (recovery / when there's an error)
+ 4. **Chaining** (long sequences of asynchronous work)
+
+Four states of a `Promise`:
+ 1. **Fulfilled (Resolved)**
+ 2. **Rejected**
+ 3. **Pending**
+ 4. **Settled**
+
+```js
+ new Promise(function (resolve, reject){
+   resolve('hi') // works
+   reject('bye') // can't happen a second time
+})
+  .then()
+  .then()
+  .catch()
+```
 
 
 &nbsp;
