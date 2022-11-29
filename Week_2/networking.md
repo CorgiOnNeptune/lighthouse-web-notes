@@ -50,6 +50,8 @@ Request-response, text-based protocol.
 
 **PATH**: Resource the client wants to act on. The path is part of a [URL (Uniform Resource Locator)](#url).
 
+**CRUD:** Create, Read, Update, Delete
+
 **METHOD**: What action will be performed. There are 9 HTTP request methods.
 * `GET`: used to 'get' data from a server
 * `POST`: usually used to create some new data
@@ -63,6 +65,15 @@ Request-response, text-based protocol.
 * `500`: 'Server had an error'
 
 Requests and responses both contain key-value based headers (eg: `Accept-Language: fr` || `Content-Type: text/html`)
+
+```html
+|- client -|           |--------- server ---------|
+
+
+              ------>               ------->
+browser        HTTP       server.js          database
+              <------               <-------
+```
 
 &nbsp;
 ***
