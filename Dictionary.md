@@ -20,7 +20,9 @@
   * [Recursive Case](#recursive-case)
   * [Base Case](#base-case)
 * [Single Responsibility Principle](#single-responsibility-principle)
-* [Stack Overflow](#stack-overflow)
+* [Stack](#stack)
+  * [Full-Stack](#full-stack)
+  * [Stack Overflow](#stack-overflow)
 * [Testing](#testing)
   * [Functional Testing](#functional-testing)
   * [Integration Testing](#integration-testing)
@@ -179,9 +181,27 @@ i.e. use helper functions to limit duplicate, redundant code or overly complex f
 
 
 &nbsp;
-## Stack Overflow
-An overflow error that happens when a program tries to use more memory space in the call stack than has been allocated to that stack.
+## Stack
+A collection of technologies used in a given system. 
+e.g. 
+* Server: Node.js
+* Middleware: Express
+* Templates Engine: EJS
+* Database:
+* Hosting/Infrastructure: Railway.app
 
+**[MEAN](https://en.wikipedia.org/wiki/MEAN_(solution_stack))** would use MongoDB, Express, Angular, and Node.
+
+&nbsp;
+### Full-Stack
+A developer who is familiar (preferably very much) with every layer in a stack.
+
+[What is a Full Stack developer?](https://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/)
+
+
+&nbsp;
+### Stack Overflow
+An overflow error that happens when a program tries to use more memory space in the call stack than has been allocated to that stack.
 
 
 &nbsp;
