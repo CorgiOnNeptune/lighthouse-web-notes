@@ -42,9 +42,6 @@ Flexible, reacts to different screen sizes and display types.
 }
 ```
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="XGXWPz" data-user="sadief" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sadief/pen/XGXWPz">
-  FlexBox Fun</a> by Sadie Freeman (<a href="https://codepen.io/sadief">@sadief</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+See the CodePen <a href="https://codepen.io/sadief/pen/XGXWPz">
+FlexBox Fun</a>.
+
