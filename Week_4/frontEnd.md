@@ -12,6 +12,14 @@
 * [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [HTML References - MDN](https://developer.mozilla.org/en-US/docs/Web/Events)
 
+
+### Chrome Dev-Tools
+* [Chrome DevTools Overview](https://developer.chrome.com/docs/devtools/overview/)
+* [CSS References](https://developer.chrome.com/docs/devtools/css/reference/)
+* [JS Debugging Reference](https://developer.chrome.com/docs/devtools/javascript/reference/)
+
+
+
 &nbsp;
 ***
 
@@ -23,6 +31,11 @@ e.g. Javascript is the client-side scripting language that connects to the DOM i
 Almost anytime a website performs an action, it is the result of Javascript accessing and manipulating the DOM.
 
 [...Read More](https://www.digitalocean.com/community/tutorials/introduction-to-the-dom)
+
+
+&nbsp;
+## DOM Events
+[Intro to Events (w/ jQuery)](https://learn.jquery.com/events/introduction-to-events/)
 
 
 &nbsp;
