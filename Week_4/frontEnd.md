@@ -1,9 +1,9 @@
 # Front-End Tools and Resources
 ## Lil' Table of Contents
+* [DOM](/Week_4/frontEnd.md#dom-document-object-model)
 * [Event Propogation](/Week_4/frontEnd.md#event-propogation)
   * [Bubbling](/Week_4/frontEnd.md#bubbling)
   * [Capturing](/Week_4/frontEnd.md#capturing)
-* [DOM](/Week_4/frontEnd.md#dom-document-object-model)
 
 &nbsp;
 ### Front-End References 
@@ -15,6 +15,17 @@
 &nbsp;
 ***
 
+## DOM (Document Object Model)
+Interface that allows a programming language to manipulate the content, structure, and style of a website. 
+
+e.g. Javascript is the client-side scripting language that connects to the DOM in an internet browser.
+
+Almost anytime a website performs an action, it is the result of Javascript accessing and manipulating the DOM.
+
+[...Read More](https://www.digitalocean.com/community/tutorials/introduction-to-the-dom)
+
+
+&nbsp;
 ## Event Propogation
 There are 3 phases of standard event propogation:
  1. Capturing phase - the event goes down to the element
@@ -29,16 +40,3 @@ When an event happens on an element, it first runs the (event) handlers on it (t
 
 ### Capturing
 The event moving down through ancestor elements to meet and handle the target element. The capturing phase has a handler that is by default set to `false`. This prevents accidental handling on events during the capture phase.
-
-
-&nbsp;
-## DOM (Document Object Model)
-Interface that allows a programming language to manipulate the content, structure, and style of a website. 
-
-e.g. Javascript is the client-side scripting language that connects to the DOM in an internet browser.
-
-Almost anytime a website performs an action, it is the result of Javascript accessing and manipulating the DOM.
-
-[...Read More](https://www.digitalocean.com/community/tutorials/introduction-to-the-dom)
-
-
