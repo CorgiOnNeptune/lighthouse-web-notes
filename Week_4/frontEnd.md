@@ -1,5 +1,6 @@
 # Front-End Tools and Resources
 ## Lil' Table of Contents
+* [CSS Display](/Week_4/cssDisplay.md)
 * [DOM](/Week_4/frontEnd.md#dom-document-object-model)
 * [Event Propogation](/Week_4/frontEnd.md#event-propogation)
   * [Bubbling](/Week_4/frontEnd.md#bubbling)

@@ -5,6 +5,7 @@
 * [Closures](#closures)
 * [Falsy Values](#falsy-values)
 * [Front-End](/Week_4/frontEnd.md)
+  * [CSS Display](/Week_4/cssDisplay.md)
   * [DOM](/Week_4/frontEnd.md#dom-document-object-model)
   * [Event Propogation](/Week_4/frontEnd.md#event-propogation)
 * [Lexical Scoping](#lexical-scoping)
