@@ -4,7 +4,7 @@
 
 - [CSS Display](/Week_4/cssDisplay.md)
 - [DOM](#dom-document-object-model)
-- [Event Propogation](#event-propogation)
+- [Event Propagation](#event-propagation)
   - [Bubbling](#bubbling)
   - [Capturing](#capturing)
 
@@ -45,9 +45,9 @@ Almost anytime a website performs an action, it is the result of Javascript acce
 
 &nbsp;
 
-## Event Propogation
+## Event Propagation
 
-There are 3 phases of standard event propogation:
+There are 3 phases of standard event propagation:
 
 1.  Capturing phase - the event goes down to the element
 2.  Target phase - The event reaches the chosen (targeted) element
